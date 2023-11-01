@@ -211,12 +211,13 @@ void MeshTopology::renumber(BREPTopology& topology)
 			}
 			
 			auto topo_type = topology.pk_to_class[edge_to_topology(i, j)];
-			if (topo_type == PK_CLASS_edge) {
-				edge_to_topology(i, j) = topology.pk_to_idx[topo_pk_idx];
-			}
-			else {
-				edge_to_topology(i, j) = -1;
-			}
+			edge_to_topology(i, j) = -1;
+			// if (topo_type == PK_CLASS_edge) {
+			// 	edge_to_topology(i, j) = topology.pk_to_idx[topo_pk_idx];
+			// }
+			// else {
+			// 	edge_to_topology(i, j) = -1;
+			// }
 		}
 	}
 	for (int i = 0; i < point_to_topology.size(); ++i) {
@@ -226,12 +227,13 @@ void MeshTopology::renumber(BREPTopology& topology)
 			continue;
 		}
 		auto topo_type = topology.pk_to_class[topo_pk_idx];
-		if (topo_type == PK_CLASS_vertex) {
-			point_to_topology(i) = topology.pk_to_idx[topo_pk_idx];
-		}
-		else {
-			point_to_topology(i) = -1;
-		}
+		point_to_topology(i) = -1;
+		// if (topo_type == PK_CLASS_vertex) {
+		// 	point_to_topology(i) = topology.pk_to_idx[topo_pk_idx];
+		// }
+		// else {
+		// 	point_to_topology(i) = -1;
+		// }
 	}
 }
 
