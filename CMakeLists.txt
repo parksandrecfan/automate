@@ -12,7 +12,7 @@ include(FetchContent)
 FetchContent_Declare(
   brloader
   GIT_REPOSITORY   https://github.com/parksandrecfan/breploader.git
-  GIT_TAG   v0.4
+  GIT_TAG   main
 )
 
 FetchContent_MakeAvailable(brloader)
