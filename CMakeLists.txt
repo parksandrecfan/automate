@@ -11,7 +11,7 @@ find_package(Eigen3 REQUIRED)
 include(FetchContent)
 FetchContent_Declare(
   brloader
-  GIT_REPOSITORY   https://github.com/deGravity/breploader.git
+  GIT_REPOSITORY   https://github.com/parksandrecfan/breploader.git
   GIT_TAG   v0.4
 )
 
