@@ -7,7 +7,6 @@ channels:
 
 dependencies:
  - python
- - cudatoolkit=11.3
  - pytorch>=1.10
  - pyg=2.0.3
  - numpy
